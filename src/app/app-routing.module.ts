@@ -11,10 +11,11 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'my-pokemons', loadChildren: './my-pokemons/my-pokemons.module#MyPokemonsPageModule' },
+  { path: 'all-pokemons', loadChildren: './all-pokemons/all-pokemons.module#AllPokemonsPageModule' },
+  { path: 'pokemon/:name', loadChildren: './pokemon/pokemon.module#PokemonPageModule' },
+  { path: 'catch/:name', loadChildren: './catch/catch.module#CatchPageModule' },
+  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
 ];
 
 @NgModule({

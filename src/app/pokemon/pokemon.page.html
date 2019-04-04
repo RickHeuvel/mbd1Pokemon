@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+    <ion-title>Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{pokemon.name}}</ion-card-title>
+      <ion-img [src]="pokemon.sprite"></ion-img>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label>Lengte: {{pokemon.height}}</ion-label><br>
+      <ion-label>Gewicht: {{pokemon.weight}}</ion-label><br>
+      <ion-label>Types: {{pokemon.types}}</ion-label><br>
+    </ion-card-content>
+    <ion-button (click)="sharePokemon()">Share</ion-button>
+  </ion-card>
+
+
+  <br>
+
+
+
+
+</ion-content>

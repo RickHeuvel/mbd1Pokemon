@@ -1,5 +1,7 @@
 {
   "name": "eindopdracht",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

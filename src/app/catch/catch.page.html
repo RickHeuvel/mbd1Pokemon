@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>catch</ion-title>
+    <ion-button slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!caught">
+    <ion-label>Je hebt 20 seconden om de pokemon te vangen!</ion-label>
+    <br>
+    <ion-label>{{timerVal}}</ion-label>
+  </div>
+  <div *ngIf="caught">
+    <ion-label>Gefeliciteerd je hebt {{pokemon.name}} gevangen!</ion-label>
+  </div>
+
+  <div>
+    <ion-button *ngIf="!caught" style="align-self: center" (click)="catch()">vang {{pokemon.name}}!</ion-button>
+  </div>
+</ion-content>
