@@ -75,7 +75,7 @@ export class MapService {
 
   private catchPokemon(marker: mapboxgl.Marker) {
 
-    if (this.getDistence(marker.getLngLat()) > 0.2) {
+    if (this.getDistence(marker.getLngLat()) > 0.3) {
       const popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(marker.getLngLat())
           .setText('deze pokemon is buiten je bereik')
